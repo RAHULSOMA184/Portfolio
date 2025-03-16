@@ -1,54 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rahul's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rahul S | Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>Rahul's Portfolio</h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm Rahul, a Master's student specializing in data analytics, with experience in SQL, programming, and data visualization tools like Matplotlib and Seaborn. I love creating insights from data!</p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Data Analytics Project</h3>
-            <p>Worked on race vs. average length of stay data analysis for hospitals.</p>
-        </div>
-        <div class="project">
-            <h3>EDA on COVID-19 Data</h3>
-            <p>Explored the impact of COVID-19 on different demographics using Seaborn for visualizations.</p>
-        </div>
-    </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>SQL</li>
-            <li>Data Visualization (Matplotlib, Seaborn)</li>
-            <li>Exploratory Data Analysis</li>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Rahul S</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Transforming Data Into Impactful Insights</h1>
+            <p>Aspiring Data Analyst | Python | SQL | Tableau</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
     </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: rahul.email@example.com</p>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <h3>Campus Demographics Dashboard</h3>
+                <p>Visualized campus data using Tableau, providing insights into demographics and commuting patterns.</p>
+            </div>
+            <div class="project-card">
+                <h3>Somerville Crash Data Analysis</h3>
+                <p>Analyzed crash data to identify key factors influencing injuries using Python and SQL.</p>
+            </div>
+            <div class="project-card">
+                <h3>Air Quality and Traffic Impact Study</h3>
+                <p>Explored the relationship between air pollution and traffic data using GIS and Python.</p>
+            </div>
+        </div>
     </section>
-    <footer>
-        <p>&copy; 2024 Rahul's Portfolio</p>
-    </footer>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skill-container">
+            <div class="skill-card">Python</div>
+            <div class="skill-card">SQL</div>
+            <div class="skill-card">Tableau</div>
+            <div class="skill-card">Power BI</div>
+            <div class="skill-card">GIS</div>
+            <div class="skill-card">Machine Learning</div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <h2>Experience</h2>
+        <div class="experience-card">
+            <h3>Data Lab Assistant - Tufts University</h3>
+            <p>Supported students with data analysis and visualization using Python, R, and Tableau.</p>
+        </div>
+        <div class="experience-card">
+            <h3>Senior Systems Engineer - Infosys</h3>
+            <p>Worked on Kubernetes, Docker, and CI/CD pipelines to improve system reliability and performance.</p>
+        </div>
+        <div class="experience-card">
+            <h3>Graduate Engineer Trainee - Larsen & Toubro</h3>
+            <p>Used ArcGIS and Pandas for spatial analysis and infrastructure planning.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+
 </body>
 </html>
